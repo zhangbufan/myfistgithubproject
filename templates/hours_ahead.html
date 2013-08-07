@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}Future time{% endblock %}
+
+{% block content %}
+<p>In {{ hour_offset }} hour(s), it will be {{ next_time }}.</p>
+{% endblock %}
